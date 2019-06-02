@@ -1,0 +1,24 @@
+.button {
+    padding: 16px 0;
+    
+    &__link {
+        width: 140px;
+        height: 55px;
+        font-family: $open-sans;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $white-light;
+        border: 1px solid $purple;
+        border-radius: 4px;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        @include transition;
+        
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            box-shadow: 0 3px 2px $purple-dark;
+        }
+    }
+}

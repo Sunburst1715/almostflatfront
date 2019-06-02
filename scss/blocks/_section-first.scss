@@ -1,0 +1,18 @@
+.section-first {
+    padding: 67px 0 80px;
+    background-image: url(../images/bg-1.jpg);
+    background-repeat: repeat;
+    position: relative;
+    z-index: 2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 17px);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/bg-1.jpg);
+    transform: rotate(45deg) translateX(-50%);
+  }
+}

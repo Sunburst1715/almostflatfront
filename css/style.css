@@ -1,3 +1,191 @@
+.menu__item a:hover, .menu__item--active a {
+  background-color: #f7df59;
+  border: 1px solid #f7df59;
+  text-shadow: 0 2px 2px #ead354;
+  box-shadow: 0 3px 0 0 #4c2f65; }
 
+.slick-dots li button:hover, .slick-dots li.slick-active button {
+  border: 1px solid #4c2f65;
+  border-radius: 50%; }
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Black.otf") format("opentype"), url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype"), url("../fonts/Gotham-Black.svg#Gotham-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.otf") format("opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Gotham-Thin";
+  src: url("../fonts/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Thin.otf") format("opentype"), url("../fonts/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham-Thin.ttf") format("truetype"), url("../fonts/Gotham-Thin.svg#Gotham-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 100%;
+  min-width: 320px; }
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #fff; }
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; }
+  .header__img {
+    display: block; }
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+.menu__item {
+  margin-left: 10px;
+  position: relative; }
+  .menu__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    font-family: "Gotham-Black", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    width: 140px;
+    height: 55px;
+    border: 1px solid #9884aa;
+    border-radius: 4px; }
+  .menu__item--active a:after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #f7df59;
+    transform: rotate(45deg) translateX(-50%);
+    box-shadow: 3px 3px 0 0 #4c2f65; }
+
+.section-first {
+  padding: 67px 0 80px;
+  background-image: url(../images/bg-1.jpg);
+  background-repeat: repeat;
+  position: relative;
+  z-index: 2; }
+  .section-first:after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 17px);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/bg-1.jpg);
+    transform: rotate(45deg) translateX(-50%); }
+
+.caption {
+  color: #fff;
+  text-align: center; }
+  .caption__list {
+    padding: 80px 0 45px;
+    margin-bottom: 45px;
+    position: relative; }
+    .caption__list:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      display: block;
+      height: 2px;
+      background-color: #9884aa; }
+  .caption__title {
+    font-family: "Gotham-Black", sans-serif;
+    font-size: 112px;
+    text-transform: uppercase; }
+    .caption__title span {
+      color: #ead7fb; }
+  .caption__subtitle {
+    font-family: "Gotham-Black", sans-serif;
+    font-size: 34px;
+    word-spacing: -1px; }
+
+.slick-slide {
+  outline: none;
+  cursor: pointer; }
+
+.slick-dots {
+  position: static;
+  padding-top: 55px; }
+  .slick-dots li button:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .slick-dots li button:hover:before {
+    background: #4c2f65; }
+  .slick-dots li.slick-active button:before {
+    background: #4c2f65; }
+
+.slider__text {
+  font-family: "Gotham-Thin", sans-serif;
+  font-size: 28px;
+  line-height: 1.25;
+  max-width: 810px;
+  margin: 0 auto; }
+
+.button {
+  padding: 16px 0; }
+  .button__link {
+    width: 140px;
+    height: 55px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fefefe;
+    border: 1px solid #9884aa;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s linear; }
+    .button__link:hover {
+      background-color: #69c7e2;
+      border-color: #69c7e2;
+      box-shadow: 0 3px 2px #4c2f65; }
+
+.section-second {
+  background-image: url(../images/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

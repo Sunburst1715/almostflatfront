@@ -1,0 +1,64 @@
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    &__content {
+        @include flex(space-between, center, nowrap);
+    }
+
+    &__img {
+        display: block;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    &__item {
+        margin-left: 10px;
+        position: relative;
+        
+        a {
+            @include flex(center, center, nowrap);
+            @include transition;
+            text-decoration: none;
+            font-family: $gotham-black;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: $regular;
+            width: 140px;
+            height: 55px;
+            border: 1px solid $purple;
+            border-radius: 4px;
+
+            &:hover {
+                @extend %link-hover;
+            }
+        }
+
+        &--active {
+            a {
+                @extend %link-hover;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: calc(100% - 3px);
+                    left: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $yellow;
+                    transform: rotate(45deg) translateX(-50%);
+                    box-shadow: 3px 3px 0 0 $purple-dark;
+                }
+            }
+        }
+    }
+}
