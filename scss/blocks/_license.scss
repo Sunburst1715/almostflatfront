@@ -1,0 +1,32 @@
+
+.licence {
+    padding-bottom: 65px;
+    position: relative;
+    @include line ($violet);
+
+    &__text {
+        font-size: 13px;
+        font-weight: $light;
+        line-height: 2.3;
+        color: $violet;
+        background-color: $white;
+        @extend %many-shadow;
+        padding: 28px 20px;
+        border-radius: 4px;
+
+        b {
+            font-weight: $medium;
+        }
+
+        a {
+            font-weight: $medium;
+            color: $violet;
+            @include transition;
+            
+            &:hover {
+                font-weight: $bold;
+	            color: $purple-dark;
+            }
+        }       
+    }
+}

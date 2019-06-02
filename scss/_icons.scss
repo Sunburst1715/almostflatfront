@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icons/icomoon.eot?smxvcq');
+    src:  url('../fonts/icons/icomoon.eot?smxvcq#iefix') format('embedded-opentype'),
+      url('../fonts/icons/icomoon.ttf?smxvcq') format('truetype'),
+      url('../fonts/icons/icomoon.woff?smxvcq') format('woff'),
+      url('../fonts/icons/icomoon.svg?smxvcq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook .path1:before {
+    content: "\e900";
+    color: rgb(59, 89, 152);
+  }
+  .icon-facebook .path2:before {
+    content: "\e901";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-instagram .path1:before {
+    content: "\e902";
+    color: rgb(108, 39, 179);
+  }
+  .icon-instagram .path2:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(80, 26, 150);
+  }
+  .icon-instagram .path3:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-instagram .path4:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-instagram .path5:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(209, 209, 209);
+  }
+  .icon-instagram .path6:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(209, 209, 209);
+  }
+  .icon-instagram .path7:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(209, 209, 209);
+  }
+  .icon-pinterest .path1:before {
+    content: "\e909";
+    color: rgb(203, 32, 39);
+  }
+  .icon-pinterest .path2:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(241, 242, 242);
+  }
+  .icon-twitter .path1:before {
+    content: "\e90b";
+    color: rgb(85, 172, 238);
+  }
+  .icon-twitter .path2:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(241, 242, 242);
+  }

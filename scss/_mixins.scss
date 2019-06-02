@@ -6,5 +6,18 @@
 }
 
 @mixin transition {
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
+}
+
+@mixin line ($background-color) {
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        height: 2px;
+        background-color: $background-color;
+    }
 }

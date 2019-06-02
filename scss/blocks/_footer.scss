@@ -1,0 +1,19 @@
+.footer {
+    &__content {
+        @include flex (space-between, center, nowrap);
+        font-size: 14px;
+        font-weight: $light;
+        color: $violet;
+        padding: 10px 0 65px;
+
+        a {
+            color: $violet;
+            text-decoration: none;
+            
+            &:hover {
+                // font-weight: $bold;
+                color: $violet-dark;
+            }
+        }
+    }
+}

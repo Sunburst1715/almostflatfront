@@ -9,3 +9,7 @@
     border: 1px solid $purple-dark;
 	border-radius: 50%;
 }
+
+%many-shadow {
+    box-shadow: 0 1px 0 $gray-light, 0 2px 0 $gray, 0 3px 0 $gray-light, 0 4px 0 $gray, 0 5px 2px 1px $gray-dark;
+}

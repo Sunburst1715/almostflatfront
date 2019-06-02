@@ -7,16 +7,7 @@
         margin-bottom: 45px;
         position: relative;
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            display: block;
-            height: 2px;
-            background-color: $purple;
-        }
+        @include line ($purple);
     }
 
     &__title {

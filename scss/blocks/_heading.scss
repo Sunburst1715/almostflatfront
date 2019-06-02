@@ -1,0 +1,20 @@
+.heading {
+    padding: 80px 0;
+    text-align: center;
+
+    &__title {
+        font-size: 60px;
+        font-weight: $thin;
+        color: $violet;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: $medium;
+    }
+
+    &--padding {
+        padding: 95px 0 80px;
+    }
+}
