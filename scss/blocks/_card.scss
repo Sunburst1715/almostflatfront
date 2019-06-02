@@ -1,11 +1,22 @@
 .card {
     @include flex (space-between, center, nowrap);
+    margin: 0 -15px;
+
+    @media (max-width: $screen-md) {
+        flex-direction: column;
+    }
 
     &__content {
+        margin: 0 15px;
         background-color: $white-light;
         padding: 20px 20px 0;
         border-radius: 4px;
        @extend %many-shadow;
+
+       @media (max-width: $screen-md) {
+            margin-bottom: 15px;
+            padding: 15px 15px 0;
+        }
     }
 
     &__img {
@@ -20,5 +31,14 @@
         text-transform: uppercase;
         text-align: center;
         padding: 28px 0;
+
+        @media (max-width: $screen-md) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $screen-sm) {
+            font-size: 14px;
+            padding: 15px 0;
+        }
     }
 }

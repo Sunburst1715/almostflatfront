@@ -1,5 +1,11 @@
 .button {
     padding: 16px 0;
+
+    @media (max-width: $screen-sm) {
+        @include flex (center, center, nowrap);
+        flex-direction: column;
+        padding: 0;
+    }
     
     &__link {
         width: 140px;
@@ -14,6 +20,10 @@
         outline: none;
         cursor: pointer;
         @include transition;
+
+        @media (max-width: $screen-sm) {
+            margin-bottom: 10px;
+        }
         
         &:hover {
             background-color: $blue;

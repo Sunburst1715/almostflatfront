@@ -6,6 +6,21 @@
         color: $violet;
         padding: 10px 0 65px;
 
+        @media (max-width: $screen-md) {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        @media (max-width: $screen-sm) {
+            font-size: 12px;
+        }
+
+        span {
+            @media (max-width: $screen-md) {
+                padding-bottom: 10px;
+            }
+        }
+
         a {
             color: $violet;
             text-decoration: none;

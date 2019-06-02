@@ -9,21 +9,43 @@
         @include flex(space-between, center, nowrap);
     }
 
+    &__logo {
+        @media (max-width: $screen-sm) {
+            max-width: 215px;
+        }
+    }
+
     &__img {
         display: block;
+
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 }
 
 .menu {
     &__list {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         list-style: none;
+
+        @media (max-width: $screen-lg) {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: $screen-md) {
+           display: none;
+        }
     }
+    
     &__item {
-        margin-left: 10px;
-        position: relative;
-        
+        margin-left: 10px; 
+        padding-bottom: 10px;
+  
         a {
             @include flex(center, center, nowrap);
             @include transition;
@@ -37,27 +59,28 @@
             height: 55px;
             border: 1px solid $purple;
             border-radius: 4px;
+            position: relative;
 
             &:hover {
                 @extend %link-hover;
             }
-        }
+        } 
+    }
 
-        &--active {
-            a {
-                @extend %link-hover;
+    &__item.active {
+        a {
+            @extend %link-hover;
 
-                &:after {
-                    content: '';
-                    position: absolute;
-                    top: calc(100% - 3px);
-                    left: 50%;
-                    width: 10px;
-                    height: 10px;
-                    background-color: $yellow;
-                    transform: rotate(45deg) translateX(-50%);
-                    box-shadow: 3px 3px 0 0 $purple-dark;
-                }
+            &:after {
+                content: '';
+                position: absolute;
+                top: calc(100% - 3px);
+                left: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: $yellow;
+                transform: rotate(45deg) translateX(-50%);
+                box-shadow: 3px 3px 0 0 $purple-dark;
             }
         }
     }

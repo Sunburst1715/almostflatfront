@@ -5,6 +5,14 @@
     position: relative;
     z-index: 2;
 
+    @media (max-width: $screen-md) {
+      padding-bottom: 65px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-bottom: 45px;
+    }
+
   &:after {
     content: "";
     position: absolute;
