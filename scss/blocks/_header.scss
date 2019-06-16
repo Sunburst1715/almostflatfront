@@ -10,8 +10,12 @@
     }
 
     &__logo {
+        @media (max-width: $screen-lg) {
+            max-width: 250px;
+        }
+
         @media (max-width: $screen-sm) {
-            max-width: 215px;
+            max-width: 210px;
         }
     }
 
@@ -26,26 +30,44 @@
 }
 
 .menu {
+
+    @media (max-width: $screen-md) {
+        display: none;
+    }
+
+    &.active {
+        display: block;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         list-style: none;
 
-        @media (max-width: $screen-lg) {
-            max-width: 70%;
-            margin: 0 auto;
-        }
-
         @media (max-width: $screen-md) {
-           display: none;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 100%;
         }
     }
     
     &__item {
         margin-left: 10px; 
         padding-bottom: 10px;
-  
+
+        @media (max-width: $screen-lg) {
+            margin-left: 5px;        
+        }
+
+        @media (max-width: $screen-md) {
+            width: 100%;
+            margin-left: 0; 
+            padding-bottom: 0;        
+        }
+
+     
         a {
             @include flex(center, center, nowrap);
             @include transition;
@@ -61,8 +83,28 @@
             border-radius: 4px;
             position: relative;
 
+            @media (max-width: $screen-lg) {
+                width: 110px;
+                height: 45px;
+                font-size: 16px;
+            }
+
+            @media (max-width: $screen-md) {
+                width: 100%;
+                border: 0;
+                border-radius: 0;
+                background-color: #DCCEE7;
+                border-bottom: 1px solid $purple;
+            }
+
+
             &:hover {
                 @extend %link-hover;
+
+                @media (max-width: $screen-md) {
+                    box-shadow: none;
+                    border: 0;
+                }
             }
         } 
     }
@@ -81,6 +123,10 @@
                 background-color: $yellow;
                 transform: rotate(45deg) translateX(-50%);
                 box-shadow: 3px 3px 0 0 $purple-dark;
+
+                @media (max-width: $screen-md) {
+                    content: none;
+                }
             }
         }
     }

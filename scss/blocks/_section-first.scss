@@ -5,12 +5,14 @@
     position: relative;
     z-index: 2;
 
+    transition: padding-top 0.3s linear;
+
     @media (max-width: $screen-md) {
-      padding-bottom: 65px;
+      padding-bottom: 60px;
     }
 
     @media (max-width: $screen-sm) {
-      padding-bottom: 45px;
+      padding-bottom: 40px;
     }
 
   &:after {
@@ -22,5 +24,9 @@
     height: 50px;
     background-image: url(../images/bg-1.jpg);
     transform: rotate(45deg) translateX(-50%);
+  }
+
+  &.active {
+    padding-top: 200px;
   }
 }
